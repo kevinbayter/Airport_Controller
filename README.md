@@ -2,7 +2,26 @@
 
 Este proyecto del aeropuerto es una aplicación de gestión que permite administrar aeropuertos, vuelos, pasajeros, reservas, equipaje y más. La aplicación utiliza el framework Spring Boot y una base de datos MySQL para almacenar y recuperar la información.
 
-## Diagrama de la base de datos
+## Diagrama entidad relacion
+Relación de las Entidades en la Base de Datos:
+
+1. **Aeropuerto**:
+    - Tiene una relación uno a muchos con la entidad **Vuelo** a través de los campos `aeropuertoOrigen` y `aeropuertoDestino`.
+
+2. **Equipaje**:
+    - Tiene una relación muchos a uno con la entidad **Pasajero** a través del campo `pasajero`.
+
+3. **Pasajero**:
+    - No tiene relaciones directas con otras entidades en el modelo proporcionado. Sin embargo, se utiliza en la entidad **Equipaje** como una relación muchos a uno.
+    - Puede tener una relación uno a muchos con la entidad **Reserva** a través del campo `pasajero`.
+
+4. **Reserva**:
+    - Tiene una relación muchos a uno con la entidad **Vuelo** a través del campo `vuelo`.
+    - Tiene una relación muchos a uno con la entidad **Pasajero** a través del campo `pasajero`.
+
+5. **Vuelo**:
+    - Tiene una relación muchos a uno con la entidad **Aeropuerto** a través de los campos `aeropuertoOrigen` y `aeropuertoDestino`.
+
 ![Diagrama entidad relacion](diagrama.png)
 
 
