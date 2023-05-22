@@ -75,7 +75,10 @@ Puedes utilizar herramientas como Postman o cURL para realizar solicitudes HTTP 
 
 ## Ejecución en herramientas IDE
 
-También puedes ejecutar la aplicación en herramientas como Visual Studio Code o IntelliJ IDEA. Simplemente importa el proyecto en tu IDE preferido y ejecuta la clase `Application.java` ubicada en el paquete `com.tu.paquete`.
+También puedes ejecutar la aplicación en herramientas como Visual Studio Code o IntelliJ IDEA. Simplemente importa el proyecto en tu IDE preferido y ejecuta la clase `AirpotApplication.kt` ubicada en el paquete 
+```package 
+com.bibliotcary.airport
+```
 
 ## Contribuciones
 
